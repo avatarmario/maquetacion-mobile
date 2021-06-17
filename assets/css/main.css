@@ -395,3 +395,95 @@ main .portada {
      font-weight: 700;
      color: var(--just-white);
 }
+
+/******************Fourth Section************************/
+
+.main-plans-container {
+    width: 100%;
+    min-width: 320px;
+    padding-bottom: 70px;
+    text-align: center;
+}
+
+.plans--title {
+    width: 90%;
+    min-width: 288px;
+    height: auto;
+    margin: 0 auto;
+    margin-bottom: 30px; 
+}
+
+.plans--title h2 {
+    padding-top: 70px;
+    font-size: 2.4rem;
+    line-height: 2.6rem;
+    font-weight: bold;
+    color: var(--black);
+}
+
+.plans--title p {
+    padding-top: 30px;
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    font-weight: 500;
+    color: #757575;
+}
+
+/********** tarjetas **************/
+
+.plans-container--card{
+    position: relative;
+    width: 70%;
+    min-width: 230 px;
+    max-width: 300px;
+    height: 250px;
+    margin: 50px auto 0;
+    padding: o 15px;
+    background-color: var(--just-white);
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(89, 73, 30, 0.16);
+}
+
+.recommended {
+    position: absolute;
+    left: calc(50% - 60px);
+    top: -15px;
+    width: 120px;
+    height: 31px;
+    font-size: 1.2rem;
+    padding: 6px;
+    background-color: var(--bitcoin-orange);
+    color: var(--just-white);
+    border-radius: 8px;
+}
+
+.plan-card--title{
+    padding-top: 30px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: #000000;
+}
+
+.plan-card--price {
+    position: relative;
+    padding: 5px 0;
+    font-size: 5.2rem;
+    font-weight: bold;
+    line-height: 5.3rem;
+    color: black;
+}
+.plan-card--price span {
+    position: absolute;
+    top: -10px;
+    left: 90px;
+    font-size: 1.2rem;
+    font-weight: 500;
+     
+}
+
+.plan-card--savings {
+    font-size: 1.2rem;
+    line-height: 1.452rem;
+    color: #757575;
+}
