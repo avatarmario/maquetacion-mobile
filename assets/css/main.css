@@ -155,7 +155,7 @@ main .portada {
 
 }
 
-.main-currency-table {
+.main-currency-table, .main-comision-table {
     width: 70%;
     min-width: 235px;
     max-width: 500px;
@@ -163,8 +163,18 @@ main .portada {
     margin: 0 auto;
     font-family: var(--secondary-font);
 }
+/****************** table slider ****************/
+.main-tables-container {
+margin: 50px;
+display: flex;
+overflow-x: scroll;
+overscroll-behavior-x: contain;
+scroll-snap-type: x proximity;
+gap: 50px;
+height: 360px;
+}
 
-.currency-table--title {
+.main-tables-container .currency-table--title, .main-tables-container .comision-table--title {
     margin-bottom: 15px;
     font-size: 1.8rem;
     font-weight: 700;
@@ -175,22 +185,23 @@ main .portada {
 
 }
 
-.main-currency-table .currency-table--container {
+.main-currency-table .currency-table--container, .main-comision-table .comision-table--container {
    margin-bottom:15px;
    width: 90%;
    min-width: 230px;
    max-width: 300px; 
    height: 250px;
    margin: 0 auto;
+   scroll-snap-align: center;
     
 }
 
-.currency-table--container table {
+.currency-table--container table, .comision-table--container table {
     width: 100%;
     height: 100%;
 }
 
-.currency-table--container td{
+.currency-table--container td, .comision-table--container td{
     width: 50%;
     font-size: 1.6rem;
     font-weight: 500;
@@ -216,7 +227,7 @@ main .portada {
     border-radius: 0 0 0 15px;
 }
 
-.currency-table--container .table__right {
+.currency-table--container .table__right, .comision-table--container .table__right {
     font-weight: normal;
     font-size: 1.4rem;
     line-height: 1.7rem;
@@ -245,7 +256,7 @@ main .portada {
     background-repeat: no-repeat;
 }
 
- .main-currency-table .currency-table--date p { 
+ .main-currency-table .currency-table--date p, .main-comision-table .comision-table--date p { 
     width: 180px;
     height: 40px;
     margin: 0 auto;
@@ -448,7 +459,7 @@ main .portada {
     min-width: 190px;
     max-width: 300px;
     height: 250px;
-    margin: 50px 10px 0;
+    margin: 50px 10px 0;  /** left and right values do a gap between the elements in the slider ***/
     padding: 0 15px;
     background-color: var(--just-white);
     border-radius: 15px;
